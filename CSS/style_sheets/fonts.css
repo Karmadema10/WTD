@@ -1,0 +1,25 @@
+p {
+    font-weight:100px ;
+    font-style: italic;
+    line-height: normal;
+    letter-spacing: 1px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-indent: 50px;
+}
+h3 {
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: palevioletred;
+    text-decoration-style: double;
+    color: rgb(100, 50, 10);
+    color: #97bddf;
+    
+}
+div {
+    margin: 50px;
+    border: 2px solid black;
+    margin-top: 20px;
+    padding: 30px;
+    
+}
