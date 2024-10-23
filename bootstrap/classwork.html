@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Form</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+    <style>
+        body {
+            padding: 20px;
+        }
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        .form-group label {
+            display: inline-block;
+            margin-bottom: 5px;
+        }
+        .form-check-inline {
+            margin-right: 20px;
+        }
+        select {
+            width: 100%;
+        }
+        button {
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <form>
+        <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" class="form-control" id="username" placeholder="Enter username">
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter email">
+        </div>
+
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" class="form-control" id="password" placeholder="Enter password">
+        </div>
+
+        <div class="form-group">
+            <label for="age">Age</label>
+            <input type="number" class="form-control" id="age" placeholder="Enter age">
+        </div>
+
+        <div class="form-group">
+            <label>Choose your gender:</label><br>
+            <label class="form-check-inline">
+                <input class="form-check-input" type="radio" name="gender" id="male" value="male"> Male
+            </label>
+            <label class="form-check-inline">
+                <input class="form-check-input" type="radio" name="gender" id="female" value="female"> Female
+            </label>
+        </div>
+
+        <div class="form-group">
+            <label for="program">Choose your program:</label>
+            <select class="form-control" id="program">
+                <option value="DMA">DMA</option>
+                <option value="DCSN">DCSN</option>
+                <option value="DCE">DCE</option>
+            </select>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="/bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

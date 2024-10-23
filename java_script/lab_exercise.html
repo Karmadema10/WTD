@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Process Scores</title>
+</head>
+<body>
+    <h1>Student Scores</h1>
+    
+    <!-- Button to trigger the process -->
+    <button onclick="displayScores()">Display Scores</button>
+
+    <!-- Area to display the result -->
+    <p id="result"></p>
+
+    <script>
+        // Create an object 'student' where keys are names and values are scores
+        let student = {
+            Sonam: 76,
+            Pema: 61,
+            Sangay: 50,
+            Dechen: 55,
+            Lhaki: 92,
+            Karma: null,
+            Yuden: 81
+        };
+
+        // Function to process student scores
+        function processScores(students) {
+            let result = [];  // This will store the name and scores in the result array
+
+            // Using a 'for-in' loop to iterate through the student object
+            for (let name in students) {
+                let score = students[name];
+
+                // If score is null, break the loop (exit the loop)
+                if (score === null) {
+                    break;
+                }
+
+                // If score is less than 50, continue to the next student (skip)
+                if (score < 50) {
+                    continue;
+                }
+
+                // Push the name and score into the result array
+                result.push(`${name}: ${score}`);
+            }
+
+            // Return the result array
+            return result;
+        }
+
+        // Function to display the processed scores
+        function displayScores() {
+            let finalResult = processScores(student); // Call the function
+            document.getElementById("result").innerHTML = finalResult.join('<br>'); // Display the result
+        }
+    </script>
+</body>
+</html>
